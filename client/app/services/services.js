@@ -15,10 +15,10 @@ angular.module('app.service', [])
       add: add
     };
   })
-  .factory('statusFactory', function($http) {
-    return {
-      get: function() {
-        return $http.get('/status');
-      }
-    };
-  });
+.factory('statusFactory', function($http) {
+  return {
+    get: function() {
+      return $http.get('/status');
+    }
+  };
+});
